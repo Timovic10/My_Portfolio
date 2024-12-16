@@ -1,0 +1,907 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --general-font-family: "Manrope", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  padding: 1rem 0;
+  background-color: #fff;
+  z-index: 5;
+}
+
+header h1 {
+  font-family: var(--general-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  color: #242a41;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+header nav div ul {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+header nav div ul li {
+  font-family: var(--general-font-family);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25.5px;
+  color: #1d2130;
+}
+
+header nav div {
+  display: flex;
+  gap: 2rem;
+}
+
+header button {
+  width: 153.14px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 12.8px;
+  color: #fff;
+  background-color: #7de0ea;
+  border: none;
+  font-family: var(--general-font-family);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+header button:hover {
+  background-color: #479ba3;
+}
+
+header .icon {
+  width: 16px;
+  height: 16.8px;
+}
+
+.ham {
+  width: 4rem;
+  display: none;
+}
+
+/* hero-section */
+.hero-section {
+  padding: 13rem 0;
+  padding-top: 17rem;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+  gap: 8rem;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap-reverse;
+}
+
+.hero-section::-webkit-scrollbar {
+  display: none;
+}
+
+.hero-section article {
+  position: relative;
+  z-index: 1;
+}
+
+.blurimg {
+  width: 724px;
+  height: 700px;
+  position: absolute;
+}
+
+.hero-section h2 {
+  font-family: var(--general-font-family);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 61.6px;
+  text-align: left;
+  color: #787879;
+}
+
+.hero-section p {
+  font-family: var(--general-font-family);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #43495b;
+  width: 440.41px;
+  opacity: 87%;
+}
+
+.socialIcons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.socialIcons span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5rem;
+  width: 80px;
+  background-color: #ffffff;
+  height: 80px;
+  transition: 0.5s ease-in-out;
+  box-shadow: 0px 0px 20px rgb(110, 109, 109);
+}
+
+.socialIcons span img {
+  width: 40px;
+  height: 40px;
+}
+
+.socialIcons span:hover {
+  transform: translateY(-1rem);
+}
+
+.line {
+  position: absolute;
+  height: 60rem;
+  top: 10rem;
+}
+
+.hero-section figure {
+  position: relative;
+}
+
+.hero-section .crytImg {
+  position: absolute;
+  width: 40rem;
+}
+
+.hero-section .avatar {
+  width: 400.51px;
+  height: 400.6px;
+  background-color: #dee0fa;
+  border-radius: 50rem;
+}
+
+/* talent */
+.talent {
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  width: 90%;
+  margin: 4rem auto;
+  /* border: 1px solid; */
+  flex-wrap: wrap;
+  gap: 8rem;
+}
+
+.talent figure {
+  position: relative;
+  /* border: 1px solid; */
+  width: 350px;
+  height: 300.49px;
+  padding: 1rem 3rem;
+}
+
+.talent article {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 5rem;
+}
+
+.talent article h2 {
+  font-family: var(--general-font-family);
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 57.6px;
+  text-align: left;
+  color: #242a41;
+}
+
+.talent .Circle2 {
+  position: absolute;
+  width: 45rem;
+  left: -4rem;
+  top: -7rem;
+  height: 45rem;
+}
+
+.talent .lefticon {
+  position: absolute;
+  left: 0;
+  width: 70px;
+  height: 70px;
+}
+
+.talent .righticon {
+  position: absolute;
+  right: 1rem;
+  top: 5rem;
+  width: 70px;
+  height: 70px;
+}
+
+.centericon {
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  width: 70px;
+  height: 70px;
+}
+
+.talent .leftbuttomicon {
+  position: absolute;
+  bottom: 0;
+  top: 20rem;
+  left: 0;
+  width: 70px;
+  height: 70px;
+}
+
+.talent .rightbuttomicon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70px;
+  height: 70px;
+}
+
+.talent article div {
+  border: 2px solid #585f6f;
+  width: 608px;
+  height: 202.39px;
+  border-radius: 8px;
+  padding: 2rem 3rem;
+  background-color: #edf0f9;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.talent article div span {
+  position: relative;
+  z-index: 1;
+  margin-top: 2rem;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+}
+
+.talent article div span h4 {
+  transform: rotate(2deg);
+  font-family: Roboto;
+  font-size: 25.6px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  color: #585f6f;
+}
+
+.talent article div span h3 {
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38.4px;
+  text-align: left;
+  transform: rotate(2deg);
+  color: #242a41;
+}
+
+.talent article div span p {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  transform: rotate(2deg);
+  color: #585f6f;
+}
+
+.talent .rot1 {
+  transform: rotate(2deg);
+}
+
+.talent .rot2 {
+  transform: rotate(-2deg);
+}
+
+.talent .topPos {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: -10.16px;
+  left: -20.65px;
+  transform: rotate(-0deg);
+}
+
+.talent .botPos {
+  position: absolute;
+  width: 145.86px;
+  height: 145.86px;
+  top: 127.6px;
+  left: -31.54px;
+  transform: rotate(-5.24deg);
+}
+
+.talent .botPos2 {
+  position: absolute;
+  width: 89.86px;
+  height: 89.86px;
+  top: 161.6px;
+  left: 69.92px;
+  transform: rotate(-5.24deg);
+}
+
+.talent .rigPos {
+  position: absolute;
+  width: 120.14px;
+  height: 170.02px;
+  right: 0;
+  bottom: -1rem;
+  transform: rotate(-0.18deg);
+}
+
+/* design_portfolio */
+.design_portfolio {
+  width: 90%;
+  margin: 5rem auto;
+  display: flex;
+  flex-flow: column;
+  gap: 3rem;
+}
+
+.design_portfolio h1 {
+  font-family: var(--general-font-family);
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 61.6px;
+  text-align: center;
+  color: #242a41;
+}
+
+.design_portfolio article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+  gap: 3rem;
+}
+
+.design_portfolio div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  width: 900.8px;
+  border-radius: 30px;
+  padding: 2rem 3rem;
+  height: 420.76px;
+  overflow: hidden;
+}
+
+.portcol1 {
+  background: #defcff;
+}
+
+.portcol2 {
+  background: #e2dbff;
+}
+
+.portcol2 .portfolio-img {
+  transform: rotate(-19.83deg);
+  position: relative;
+  z-index: 1;
+  top: 0;
+  right: -5rem;
+  height: 440px !important;
+  height: 100%;
+}
+
+.portcol3 {
+  background: #defcff;
+}
+
+.design_portfolio .topPos {
+  width: 130.34px;
+  height: 130.34px;
+  top: 0;
+  position: absolute;
+  left: -1rem;
+}
+
+.design_portfolio .botPos {
+  position: absolute;
+  width: 200.66px;
+  height: 200.66px;
+  bottom: -1rem;
+  left: 0px;
+  z-index: 1;
+}
+
+.design_portfolio .botPos2 {
+  position: absolute;
+  width: 210px;
+  height: 210px;
+  bottom: -5rem;
+  left: 10rem;
+}
+
+.design_portfolio .rigPos {
+  position: absolute;
+  right: 0;
+  bottom: -5rem;
+  height: 90%;
+}
+
+.design_portfolio div .portCov {
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+  z-index: 3;
+  gap: 1.5rem;
+  bottom: -5rem;
+}
+
+.design_portfolio div .portCov span {
+  display: flex;
+  gap: 1rem;
+}
+
+.design_portfolio div button {
+  width: 25rem;
+  border: none;
+  padding: 18px 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+  border-radius: 15px;
+  background-color: #583fbc;
+  font-family: var(--general-font-family);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.13px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.design_portfolio div .portCov span button {
+  width: 100%;
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  background-color: #ffffff;
+  font-family: var(--general-font-family);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23.13px;
+  text-align: center;
+  color: #6878ac;
+  border: none;
+}
+
+.design_portfolio div .portCov h2 {
+  font-family: var(--general-font-family);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 44px;
+  text-align: left;
+  color: #242f65;
+}
+
+.design_portfolio div .portCov p {
+  font-family: var(--general-font-family);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25.7px;
+  text-align: left;
+  color: #585f6f;
+  width: 400px;
+}
+
+.design_portfolio .portfolio-img {
+  width: 300px;
+  position: relative;
+  z-index: 1;
+  bottom: -7rem;
+  border-radius: 2rem;
+  box-shadow: 0px 48px 55px 0px #c5c5c5;
+}
+
+/* clientReview */
+.clientReview {
+  background-color: #f6f7fc;
+  margin: 5rem 0;
+  display: flex;
+  position: relative;
+  flex-flow: column nowrap;
+  gap: 5rem;
+  padding: 7rem 0;
+}
+
+.clientReview h1 {
+  font-family: var(--general-font-family);
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 62.84px;
+  text-align: center;
+  color: #242a41;
+  margin-bottom: 4rem;
+}
+
+.clientReview article {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  row-gap: 7rem;
+  justify-content: center;
+}
+
+.clientReview div {
+  width: 360px;
+  padding: 1rem 43.5px;
+  padding-top: 5rem;
+  display: flex;
+  position: relative;
+  flex-flow: column nowrap;
+  gap: 3rem;
+  border-radius: 25px;
+  background-color: #ffffff;
+}
+
+.clientReview p {
+  font-family: var(--general-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  color: #232e35;
+  width: 276px;
+}
+
+.clientReview h4 {
+  font-family: var(--general-font-family);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.12px;
+  text-align: center;
+  color: #232e35;
+}
+
+.clientReview button {
+  width: 67px;
+  height: 24px;
+  padding: 4px 0;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #fbfbfb;
+  font-family: var(--general-font-family);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16.39px;
+  color: #656d72;
+  margin: 0 auto;
+  border: none;
+}
+
+.clientReview .peofileclient {
+  width: 10rem;
+  height: 10rem;
+  border: 5px solid #ffffff;
+  border-radius: 10rem;
+  top: -5rem;
+  left: 35%;
+  position: absolute;
+}
+
+.potImg1 {
+  width: 10rem;
+  margin: 0 2rem;
+  position: absolute;
+  bottom: 1rem;
+}
+.potImg2 {
+  float: right;
+  position: absolute;
+  right: 2rem;
+  width: 10rem;
+}
+
+/* try_out */
+.try_out {
+  background-color: #583fbc;
+  width: 900px;
+  border-radius: 32px;
+  margin: 5rem auto;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  align-items: center;
+  padding: 10rem 5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.try_out h1 {
+  font-family: var(--general-font-family);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 57.6px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.try_out p {
+  font-family: var(--general-font-family);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+  color: #aca0de;
+  width: 500.18px;
+  margin-top: 1rem;
+}
+
+.try_out button {
+  width: 153.14px;
+  height: 58px;
+  padding: 17px 20.91px;
+  border-radius: 12.8px;
+  background-color: #7de0ea;
+  color: #fff;
+  font-family: var(--general-font-family);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.try_out .lines {
+  position: absolute;
+  width: 100%;
+  height: 320px;
+}
+
+@media (max-width: 1089px) {
+  .ham {
+    display: block;
+  }
+
+  header nav div ul,
+  header button {
+    display: none;
+  }
+}
+
+@media (max-width: 921px) {
+  .talent article div {
+    width: 100%;
+  }
+  .design_portfolio div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem 4rem;
+    height: 100%;
+  }
+
+  .design_portfolio div .portCov {
+    position: relative;
+    bottom: 0;
+  }
+
+  .design_portfolio .portfolio-img {
+    display: none;
+  }
+
+  .design_portfolio div .portCov h2 {
+    font-size: 30px;
+  }
+
+  .design_portfolio div .portCov p {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .design_portfolio div .portCov span button {
+    font-size: 14px;
+    height: 100%;
+    padding: 0.7rem 1rem;
+    width: 15rem;
+  }
+
+  .design_portfolio div button {
+    width: 20rem;
+    font-style: 14px;
+  }
+
+  .try_out {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 3.5rem 5rem;
+  }
+
+  .try_out h1 {
+    font-size: 38px;
+  }
+
+  .try_out p,
+  .try_out button {
+    font-size: 16px;
+  }
+
+  .try_out button {
+    height: 50px;
+  }
+}
+
+@media (max-width: 501px) {
+  .hero-section {
+    padding: 2rem 0;
+    padding-top: 10rem;
+    gap: 1rem;
+  }
+  .hero-section h2 {
+    font-size: 8vw;
+    line-height: 1.4;
+    white-space: nowrap;
+    margin: 1rem;
+  }
+
+  .hero-section article {
+    width: 90%;
+  }
+
+  .hero-section p {
+    width: 90%;
+    font-size: 15px;
+    margin: 1rem;
+    line-height: 1.5;
+  }
+
+  .talent .Circle2 {
+    width: 100%;
+  }
+
+  .talent figure {
+    width: 100%;
+  }
+
+  .hero-section .crytImg {
+    width: 100%;
+  }
+  .hero-section .avatar {
+    width: 100%;
+    height: 270px;
+  }
+
+  .socialIcons span img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .socialIcons {
+    display: flex;
+    gap: 3rem;
+  }
+
+  .socialIcons span {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 617px) {
+  .try_out {
+    padding: 3.5rem 5rem;
+    text-align: center;
+  }
+
+  .try_out h1 {
+    font-size: 6.5vw;
+    width: 100%;
+    margin: 0;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  .try_out p {
+    font-size: 2.8vw;
+    width: 300px;
+    margin: 0 auto;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .try_out button {
+    height: 40px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .clientReview div {
+    width: 100%;
+  }
+
+  .clientReview p {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .design_portfolio div .portCov h2 {
+    font-size: 25px;
+    line-height: 1.5;
+  }
+
+  .design_portfolio div .portCov p {
+    font-size: 15px;
+  }
+
+  .design_portfolio div .portCov span button {
+    font-size: 14px;
+    height: 100%;
+    padding: 0.7rem 1rem;
+    width: 13.2rem;
+  }
+
+  .design_portfolio div button {
+    width: 20rem;
+    margin: 0 auto;
+    padding: 15px 0;
+    font-size: 15px;
+  }
+
+  .talent article div {
+    height: 100%;
+  }
+}
